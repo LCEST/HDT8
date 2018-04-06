@@ -30,15 +30,16 @@ public class Metodos  {
        int contador =1;
        String lista ="";         
        while(contador <= size) {
-            String msjTemp=heap.getFirst().toString();
+            String txt=heap.getFirst().toString();
             System.out.println(heap.getFirst().toString());
-            lista=lista+msjTemp;
+            lista=lista+txt;
             heap.remove();
             contador++;
        }
        return lista;
    }
    public void quitar(VectorHeap<Paciente> heap){
+       heap.remove();
        
    }
 }

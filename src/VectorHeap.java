@@ -146,7 +146,7 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E>
     public boolean isEmpty() {
          
         boolean empty = false;
-        if (data.size() == 0) { 
+        if (data.isEmpty()) { 
              empty = true;
         }
         
