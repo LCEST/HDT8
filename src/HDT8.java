@@ -2,6 +2,7 @@ import java.io.IOException;
 
 /**
  * @author Luis Esturbán 
+ * @author Gustavo De Leon
  */
 public class HDT8 {
 
