@@ -44,11 +44,11 @@ public class MetodosTest {
         Lector lector = new Lector();
         String[] listPac = lector.getText();
         System.out.println("agregar");
-        VectorHeap<Paciente> heap = null;
+        VectorHeap<Paciente> heap =  new VectorHeap<>();;
         Metodos instance = new Metodos();
         instance.agregar(heap);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     
@@ -59,23 +59,26 @@ public class MetodosTest {
     @Test
     public void testQuitar() {
         System.out.println("quitar");
-        VectorHeap<Paciente> heap = null;
+        VectorHeap<Paciente> heap =  new VectorHeap<>();
         Metodos instance = new Metodos();
         instance.quitar(heap);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
+    
+
     /**
-     * Test of agregarJV method, of class Metodos.
+     * Test of print method, of class Metodos.
      */
     @Test
-    public void testAgregarJV() throws Exception {
-        System.out.println("agregarJV");
+    public void testPrint() {
+        System.out.println("print");
+        VectorHeap<Paciente> heap =  new VectorHeap<>();;
         Metodos instance = new Metodos();
-        instance.agregarJV();
+        instance.print(heap);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
     
 }

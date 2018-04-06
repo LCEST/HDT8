@@ -1,5 +1,6 @@
 
 import java.io.IOException;
+import java.util.PriorityQueue;
 
 
 /*
@@ -29,7 +30,7 @@ public class Metodos  {
         
     }
     /*
-     * Metodo para poder mostrara\
+     * Metodo para poder imprimir con VectorHeap\
      */
    public void print(VectorHeap<Paciente> heap){ 
        int size = heap.size();
@@ -48,10 +49,33 @@ public class Metodos  {
        heap.remove();
        
    }
-   public void agregarJV() throws IOException{
-       Lector lector = new Lector();
-       String[] listPac = lector.getText();
+    /*
+     * Metodo para agregarlos datos al PriorityQueue
+     * @Param VectorHeap<Paciente> heap
+     */
+   public void agregarJ(PriorityQueue<Paciente> pq) throws IOException{
+       
+        Lector lector = new Lector();
+        String[] listPac = lector.getText();
+        for (int i = 0; i < listPac.length; i++){
+            String[] datPac = listPac[i].split(", ");
+            Paciente new_pac = new Paciente(datPac[0],datPac[1],datPac[2]);
+            pq.add(new_pac);
+        }
+        
+    }
+    /*
+     * Metodo para poder imprimir con PriorityQueue
+     */
+   public void printJ(PriorityQueue<Paciente> pq){ 
+       int size = pq.size();
+       int contador =1;     
+       while(contador <= size) {
+            System.out.println(pq.poll());
+            contador++;
+       }
    }
+
 }
 
     

@@ -8,15 +8,16 @@ import java.io.IOException;
 public class HDT8 {
 
     /**
-     * @param args the command line arguments
+     * Este Main utiliza VectorHeap
      */
     public static void main(String[] args) throws IOException{
-        System.out.println("Bienvenido al Hospital que desea hacer?: \n");
+        System.out.println("Bienvenido al Hospital. \n");
+        System.out.println("Este Main es usando VectorHeap, en Main2 encontrara una version con PriorityQueues. \n");
         Metodos hosp = new Metodos();
         VectorHeap<Paciente> heap = new VectorHeap<>();
         hosp.agregar(heap);
         hosp.print(heap);
-        System.out.println("fin");
+        System.out.println("Gracias");
        
     }
 }
