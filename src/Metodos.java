@@ -1,6 +1,6 @@
 
 import java.io.IOException;
-import java.util.*;
+
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -9,11 +9,14 @@ import java.util.*;
  */
 
 /**
- *
+ * @author Luis Esturbán 
  * @author Gustavo
  */
 public class Metodos  {
-    
+    /*
+     * Metodo para agregarlos datos al heap
+     * @Param VectorHeap<Paciente> heap
+     */
     public void agregar(VectorHeap<Paciente> heap) throws IOException{
        
         Lector lector = new Lector();
@@ -25,22 +28,29 @@ public class Metodos  {
         }
         
     }
-   public String print(VectorHeap<Paciente> heap){ 
+    /*
+     * Metodo para poder mostrara\
+     */
+   public void print(VectorHeap<Paciente> heap){ 
        int size = heap.size();
-       int contador =1;
-       String lista ="";         
+       int contador =1;     
        while(contador <= size) {
-            String txt=heap.getFirst().toString();
             System.out.println(heap.getFirst().toString());
-            lista=lista+txt;
             heap.remove();
             contador++;
        }
-       return lista;
    }
+   /*
+    * Metodo para quitar un elemento del heap.
+    * @Param VectorHeap<Paciente> heap
+   */
    public void quitar(VectorHeap<Paciente> heap){
        heap.remove();
        
+   }
+   public void agregarJV() throws IOException{
+       Lector lector = new Lector();
+       String[] listPac = lector.getText();
    }
 }
 

@@ -51,20 +51,7 @@ public class MetodosTest {
         fail("The test case is a prototype.");
     }
 
-    /**
-     * Test of print method, of class Metodos.
-     */
-    @Test
-    public void testPrint() {
-        System.out.println("print");
-        VectorHeap<Paciente> heap = null;
-        Metodos instance = new Metodos();
-        String expResult = "";
-        String result = instance.print(heap);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
+    
 
     /**
      * Test of quitar method, of class Metodos.
@@ -75,6 +62,18 @@ public class MetodosTest {
         VectorHeap<Paciente> heap = null;
         Metodos instance = new Metodos();
         instance.quitar(heap);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of agregarJV method, of class Metodos.
+     */
+    @Test
+    public void testAgregarJV() throws Exception {
+        System.out.println("agregarJV");
+        Metodos instance = new Metodos();
+        instance.agregarJV();
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }

@@ -5,9 +5,12 @@
  */
 
 /**
- *
+ * @author Luis Esturbán 
  * @author Gustavo
  */
+/*
+ *Interfaz para el PriorityQueue
+*/
 public interface PriorityQueue<E extends Comparable<E>>
 {
 	public E getFirst();

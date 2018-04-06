@@ -1,12 +1,20 @@
 /**
  * @author Luis Esturbán
+ * @author Gustavo De Leon
+ */
+
+/**
+ * Clase para obtener datos del paciente
  */
 public class Paciente implements Comparable<Paciente>{
-
-    private String nom;
-    private String cas;
-    private String pri;
-
+    
+    private String nom; //Nombre del paciente 
+    private String cas; // Caso del paciente 
+    private String pri; // Prioridad en ser atendido
+ 
+    /**
+     * Constructor 
+     */
     public Paciente(String nom, String cas, String pri) {
         this.nom = nom;
         this.cas = cas;

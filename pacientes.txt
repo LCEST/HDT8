@@ -1,6 +1,4 @@
 Juan Perez, fractura de pierna, C
 Maria Ramirez, apendicitis, A
-Lorenzo Toledo, chikunguya, F
-Carmen Sarmientos, dolores de parto, E
-Juana arcos, SIDA, Q
-Martin Lax, popo, Z
+Lorenzo Toledo, chikunguya, E
+Carmen Sarmientos, dolores de parto, B
